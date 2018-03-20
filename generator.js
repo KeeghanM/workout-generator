@@ -67,8 +67,6 @@ function setWarmup () {
 }
 
 function drawWorkout () {
-	window.console.log(workout)
-
 	let div = document.getElementById("workout")
 	let x = ""
 	for(let b of workout){
