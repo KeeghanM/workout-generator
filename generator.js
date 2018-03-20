@@ -39,7 +39,7 @@ function genWorkout (x) {
 }
 
 function setWarmup () {
-  let warmup = {'time': 5,
+  let warmup = {'time': 3,
     'type': 'Warmup 30s on / 5s off',
     'rounds': 1,
     'rest': null,
@@ -80,9 +80,9 @@ function drawWorkout () {
 		if(b.rest){
 			x = x + '<span class="rest"> with ' + b.rest + ' seconds rest between</span>'
 		}
-		x = x + '<ul class="exercises">'
+		x = x + '<ul class="exercises list-group list-group-flush">'
 		for(let e of b.exercises){
-			x = x + '<li class="exercise">' + e.name
+			x = x + '<li class="exercise list-group-item">' + e.name
 			if(e.reps){
 				x = x + '<span class="reps"> x' + e.reps + '</span>'
 			}

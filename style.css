@@ -1,10 +1,18 @@
 .time {
 	font-size: small;
 }
-.vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+@media only screen and (min-width : 992px) {
+	.vertical-center {
+	  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+	  min-height: 100vh; /* These two lines are counted as one :-)       */
 
-  display: flex;
-  align-items: center;
+	  display: flex;
+	  align-items: center;
+	}
+}
+@media only screen and (max-width : 992px) {
+	.header {
+		padding: 10px;
+		border-bottom: 2px solid #333;	
+	}
 }
